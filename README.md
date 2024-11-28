@@ -496,3 +496,7 @@ Acme的开发牢记要使其代码尽可能地可重用，因此其设计是模�
 >总结：通过调研整理发现，目前比较流行受欢迎且好用的算法测试环境及基准为：Gym，Robosuite，RoboTurk，PyRobot，RLBench，Meta-World。其中，Robosuite，RoboTurk，Gym特点比较突出。
 
 ---
+
+## Star History Graph
+
+[![Star History Chart](https://api.star-history.com/svg?repos=JadeCong/Awesome-Robot-Learning&type=Date&theme=dark)](https://star-history.com/#JadeCong/Awesome-Robot-Learning&Date&theme=dark)
