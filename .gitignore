@@ -12,7 +12,7 @@
 *.exe
 
 # IDE Config Misc
-.vscode/
+# .vscode/
 .idea/
 
 # Project Config Misc

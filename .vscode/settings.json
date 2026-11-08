@@ -1,0 +1,40 @@
+{
+    // See https://code.visualstudio.com/docs/getstarted/settings#_settingsjson for the documentation about the settings.json format.
+    "editor.rulers": [120],
+    "typescript.tsc.autoDetect": "off",
+    "grunt.autoDetect": "off",
+    "jake.autoDetect": "off",
+    "gulp.autoDetect": "off",
+    "npm.autoDetect": "off",
+    "spellright.language": [
+        "en"
+    ],
+    "spellright.documentTypes": [
+        "markdown",
+        "latex",
+        "plaintext",
+        "cpp",
+        "asciidoc"
+    ],
+    
+    // This enables python language server. Seems to work slightly better than jedi:
+    "python.jediEnabled": false,
+    
+    // Those paths are automatically filled by build system, see `repo.toml` for configuration:
+    "python.analysis.extraPaths": [
+        "exts/omni.isaac.app.selector",
+        "exts/omni.isaac.app.setup",
+        "exts/omni.isaac.core"
+    ],
+    "python.languageServer": "Jedi",
+    "python.defaultInterpreterPath": "${workspaceFolder}/kit/python/bin/python3",
+    
+    // We use "black" as a formatter:
+    "python.formatting.provider": "black",
+    "python.formatting.blackArgs": ["--line-length", "120"],
+    
+    // Use flake8 for linting
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "ros.distro": "jazzy"
+}

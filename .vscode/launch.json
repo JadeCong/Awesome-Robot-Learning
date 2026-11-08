@@ -1,0 +1,48 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387.
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "env": {
+                "RESOURCE_NAME": "IsaacSim"
+            },
+            "python": "${workspaceFolder}/kit/python/bin/python3",
+            "envFile": "${workspaceFolder}/.vscode/.standalone_examples.env",
+            "preLaunchTask": "setup_python_env"
+        },
+        {
+            "name": "Python: Attach (windows-x86_64/linux-x86_64)",
+            "type": "debugpy",
+            "request": "attach",
+            "port": 3000
+        },
+        {
+            "name": "(Linux) isaac-sim",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/kit/kit",
+            "args": ["${workspaceFolder}/apps/omni.isaac.sim.kit",
+                "--ext-folder", "${workspaceFolder}/exts",
+                "--ext-folder", "${workspaceFolder}/apps"],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        }
+    ]
+}
